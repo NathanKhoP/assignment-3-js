@@ -1,0 +1,126 @@
+/* TODO */
+body {
+    font-family: Arial;
+    background-color: #F4F4F4;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h4 { text-align: center; }
+h1 { 
+    padding: 0 0 5px 0;
+}
+h4 { 
+    font-weight: medium;
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+#activity1-target-time {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+#activity2-target-time {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+#activity3-target-time {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    padding-top: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    border-radius: 7px;
+    flex: 1 0 1;
+    width: 100%;
+}
+
+.card h3 { 
+    margin-top: 0; 
+    padding: 0 0 5px 0;
+}
+
+button {
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.stopButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.startButton {
+    background-color: #28a745;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+td {
+    background-color: white;
+    font-size: x-small;
+}
+
+@media (min-width: 768px) {
+    .activities {
+        flex-direction: unset;
+        justify-content: space-between;
+    }
+    
+    .card { width: 355px; }
+}
+
+@media (min-width: 1024px) {
+    .activities { justify-content: space-around; }
+    
+    .card {
+        width: unset;
+        min-width: max-content;
+        flex: 1 0 0;
+    }
+}

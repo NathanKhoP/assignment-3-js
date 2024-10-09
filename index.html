@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Tracker App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Productivity Tracker App</h1>
+    <h4>Nama: Nathan Kho Pancras</h4>
+    <h4>NRP: 5027231002</h4>
+    <h2>Current Activity</h2>
+    <p>List of activities that's on progress</p>
+
+    <div class="activities">
+      <div class="card">
+        <h3 class="currentHeader">Activity 1</h3>
+        <p id="activity1-time" class="activitiesTime">00:00.00</p>
+        <button class="stopButton" disabled>Stop</button>
+        <button class="startButton">Start</button>
+        <p class="targetTime" id="activity1-target-time"></p>
+      </div>
+      <div class="card">
+        <h3 class="currentHeader">Activity 2</h3>
+        <p id="activity2-time" class="activitiesTime">00:00.00</p>
+        <button class="stopButton" disabled>Stop</button>
+        <button class="startButton">Start</button>
+        <p class="targetTime" id="activity2-target-time"></p> 
+      </div>
+      <div class="card">
+        <h3 class="currentHeader">Activity 3</h3>
+        <p id="activity3-time" class="activitiesTime">00:00.00</p>
+        <button class="stopButton" disabled>Stop</button>
+        <button class="startButton">Start</button>
+        <p class="targetTime" id="activity3-target-time"></p> 
+      </div>
+    </div>
+
+    <h2>Past Activity</h2>
+    <p>List of activities that have been done</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Activity</th>
+          <th>Target</th>
+          <th>Time Tracked</th>
+          <th>Performance</th>
+        </tr>
+      </thead>
+      <tbody id="past-activities"></tbody>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
